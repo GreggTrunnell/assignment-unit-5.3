@@ -22,7 +22,12 @@ console.log(addToCollection(myCollection, 'Lift Your Skinny Fists Like Antennas 
 console.log(addToCollection(myCollection, 'A Moon Shaped Pool', 'Radiohead', 2016));
 console.log(addToCollection(myCollection, 'Stay Gold', 'First Aid Kit', 2014));
 
+console.log(addToCollection(olderAlbums, 'The Wall', 'Pink Floyd', 1979 ));
+console.log(addToCollection(olderAlbums, 'Bridge Over Troubled Water', 'Simon and Garfunkel', 1970));
+console.log(addToCollection(olderAlbums, 'Lola Versus Powerman and the Moneygoround, Part One.', 'The Kinks', 1970));
+
 console.log(myCollection);
+console.log(olderAlbums);
 
 
 //Collection argument shows any array of album objects. 
@@ -36,15 +41,26 @@ function showCollection(collection){
 }//end showCollection function
 
 console.log(showCollection(myCollection));
+console.log(showCollection(olderAlbums));
 //All the output looks correct except at the end of this log I get an undefined. Trying to find out why.
 
 
+let matchingArtitsAlbums=[];
 
-//Will need two arguments. A collection of albums to search. And artists to find in said collection.
-function findByArtist(collection, artist){
+// //Will need two arguments. A collection of albums to search. And artists to find in said collection.
+// function findByArtist(collection, artist){
+//         //Loop through collection
+//       for (let i=0; i < collection.length; i++)
+//         //check if index value is same as artist. if true push to collection array
+//       if (collection[i].artist === artist)
+//         matchingArtitsAlbums.push(collection[i].title);
+//       //return artist to array
+//       return matchingArtitsAlbums.push(collection[i].title);
+    
+// }//end of findByArtist function
 
-}//end of findByArtist function
-
+console.log(findByArtist(myCollection, 'Radiohead'));
+console.log(findByArtist(myCollection, 'Doves'));
 
 
 
