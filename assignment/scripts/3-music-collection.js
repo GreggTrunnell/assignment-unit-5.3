@@ -1,5 +1,6 @@
 console.log('***** Music Collection *****')
 // Safe Zone -- Write code below this line
+
 let myCollection=[];
 
 function addToCollection(collection, title, artist, yearPublished){
@@ -12,25 +13,20 @@ function addToCollection(collection, title, artist, yearPublished){
     return record;
 }//end of addToCollection
 
-let album1=addToCollection(myCollection, 'OK Computer', 'Radiohead', 1997);
-console.log(album1);
-
-let album2=addToCollection(myCollection, 'Lost Souls', 'Doves', 2000);
-console.log(album2);
-
-let album3=addToCollection(myCollection, 'Jubilee', 'Japanese Breakfast', 2021);
-console.log(album3);
-
-let album4=addToCollection(myCollection, 'Lift Your Skinny Fists Like Antennas to Heavan', 'Godspeed You! Black Emperor', 2000);
-console.log(album4);
-
-let album5=addToCollection(myCollection, 'A Moon Shaped Pool', 'Radiohead', 2016);
-console.log(album5);
-
-let album6=addToCollection(myCollection, 'The Gods We Can Touch', 'Aurora', 2022);
-console.log(album6);
+console.log(addToCollection(myCollection, 'OK Computer', 'Radiohead', 1997));
+console.log(addToCollection(myCollection, 'Lost Souls', 'Doves', 2000));
+console.log(addToCollection(myCollection, 'Jubilee', 'Japanese Breakfast', 2021));
+console.log(addToCollection(myCollection, 'Lift Your Skinny Fists Like Antennas to Heavan', 'Godspeed You! Black Emperor', 2000));
+console.log(addToCollection(myCollection, 'A Moon Shaped Pool', 'Radiohead', 2016));
+console.log(addToCollection(myCollection, 'Stay Gold', 'First Aid Kit', 2014));
 
 console.log(myCollection);
+
+
+
+
+
+
 
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
 // as a lil' chunk of friendly code that you don't need to understand right now.
