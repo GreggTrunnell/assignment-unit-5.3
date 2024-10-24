@@ -2,16 +2,18 @@ console.log('***** Music Collection *****')
 // Safe Zone -- Write code below this line
 
 let myCollection=[];
+let olderAlbums=[];
 
 function addToCollection(collection, title, artist, yearPublished){
-      let record={
+      let album={
         title: title,
         artist: artist,
         yearPublished: yearPublished,
       }
-   collection.push(record);
-    return record;
-}//end of addToCollection
+   collection.push(album);
+    return album;
+}//end of addToCollection function
+
 
 console.log(addToCollection(myCollection, 'OK Computer', 'Radiohead', 1997));
 console.log(addToCollection(myCollection, 'Lost Souls', 'Doves', 2000));
@@ -23,7 +25,25 @@ console.log(addToCollection(myCollection, 'Stay Gold', 'First Aid Kit', 2014));
 console.log(myCollection);
 
 
+//Collection argument shows any array of album objects. 
+function showCollection(collection){
+  //loop through collection. Will be using myCollection for the argument.
+      for (let i = 0; i < collection.length; i++)
+  //con.log each album with string like: title by artist, published in yearspublished.
+  //It will need to access each item in album object.
+   console.log(`${collection[i].title} by ${collection[i].artist}, published in ${collection[i].yearPublished}`)
+      
+}//end showCollection function
 
+console.log(showCollection(myCollection));
+//All the output looks correct except at the end of this log I get an undefined. Trying to find out why.
+
+
+
+//Will need two arguments. A collection of albums to search. And artists to find in said collection.
+function findByArtist(collection, artist){
+
+}//end of findByArtist function
 
 
 
