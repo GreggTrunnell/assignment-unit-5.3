@@ -52,10 +52,10 @@ function findByArtist(collection, artist){
   //Loop through collection and add artists albums to array if its the same artist
     for (i = 0; i < collection.length; i++){
       if (collection[i].artist === artist){
-        matchingArtistsAlbums.push(collection[i].title);
+        matchingArtistsAlbums.push(collection[i]);
       }
     }
-    return (matchingArtistsAlbums);
+    return matchingArtistsAlbums;
 }  //end of findByArtist function
 
 console.log(findByArtist(myCollection, 'First Aid Kit'));
