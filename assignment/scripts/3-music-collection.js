@@ -24,10 +24,10 @@ console.log(addToCollection(myCollection, 'A Moon Shaped Pool', 'Radiohead', 201
 console.log(addToCollection(myCollection, 'Stay Gold', 'First Aid Kit', 2014));
 console.log(myCollection);
 
-// console.log(addToCollection(olderAlbums, 'The Wall', 'Pink Floyd', 1979 ));
-// console.log(addToCollection(olderAlbums, 'Bridge Over Troubled Water', 'Simon and Garfunkel', 1970));
-// console.log(addToCollection(olderAlbums, 'Lola Versus Powerman and the Moneygoround, Part One.', 'The Kinks', 1970));
-// console.log(olderAlbums);
+console.log(addToCollection(olderAlbums, 'The Wall', 'Pink Floyd', 1979 ));
+console.log(addToCollection(olderAlbums, 'Bridge Over Troubled Water', 'Simon and Garfunkel', 1970));
+console.log(addToCollection(olderAlbums, 'Lola Versus Powerman and the Moneygoround, Part One.', 'The Kinks', 1970));
+console.log(olderAlbums);
 
 
 //Collection argument shows any array of album objects. 
@@ -40,8 +40,9 @@ function showCollection(collection){
       }//end showCollection function
 
 console.log(showCollection(myCollection));
-//console.log(showCollection(olderAlbums));
+console.log(showCollection(olderAlbums));
 //All the output looks correct except at the end of this log I get an undefined. Trying to find out why.
+
 
 
 
